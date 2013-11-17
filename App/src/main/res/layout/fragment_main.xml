@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:text="@string/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/short_pause_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/main_title"
+        android:layout_alignParentLeft="true"
+        android:text="@string/short_pause"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/short_pause_field"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/main_title"
+        android:layout_toRightOf="@id/short_pause_label"
+        android:inputType="time"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/long_pause_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/short_pause_label"
+        android:layout_alignParentLeft="true"
+        android:text="@string/long_pause"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/long_pause_field"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/short_pause_field"
+        android:layout_toRightOf="@id/long_pause_label"
+        android:inputType="time"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/notification_count_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/long_pause_label"
+        android:layout_alignParentLeft="true"
+        android:text="@string/notification_count"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/notification_count_field"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/long_pause_field"
+        android:layout_toRightOf="@id/notification_count_label"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/last_check_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/notification_count_label"
+        android:layout_alignParentLeft="true"
+        android:text="@string/last_check"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/last_check_field"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/notification_count_field"
+        android:layout_toRightOf="@id/last_check_label"
+        android:inputType="datetime"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/total_pause_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/last_check_label"
+        android:layout_alignParentLeft="true"
+        android:text="@string/total_pause"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/total_pause_field"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/last_check_field"
+        android:layout_toRightOf="@id/total_pause_label"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/total_checks_label"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/total_pause_label"
+        android:layout_alignParentLeft="true"
+        android:text="@string/total_checks"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"/>
+
+    <EditText
+        android:id="@+id/total_checks_field"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/total_pause_field"
+        android:layout_toRightOf="@id/total_checks_label"
+        android:inputType="number"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_field_height"
+        android:layout_below="@id/total_checks_field"
+        android:text="@string/submit_btn"
+        android:layout_marginTop="@dimen/text_field_height"
+        android:onClick="createRecord"/>
+
+</RelativeLayout>

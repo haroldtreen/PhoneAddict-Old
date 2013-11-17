@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PhoneAddict</string>
+    <string name="main_title">PhoneAddict</string>
+    <string name="action_settings">Settings</string>
+    <string name="short_pause">Shortest Pause</string>
+    <string name="long_pause">Longest Pause</string>
+    <string name="notification_count">Notifications</string>
+    <string name="last_check">Last Checked</string>
+    <string name="total_pause">Total Pause</string>
+    <string name="total_checks">Total Checks</string>
+    <string name="submit_btn">Submit</string>
+
+
+</resources>
